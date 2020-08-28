@@ -1,0 +1,8 @@
+body, button {
+  font: 16px Trebuchet MS;
+}
+
+body {
+  padding: 40px 140px 200px 30px;
+  box-sizing: border-box;
+}

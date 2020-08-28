@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="/Modal.js" defer></script>
+
+  <style>
+    #modal1 button, #modal1 input, #modal1 select, #modal1 textarea {
+      font: 15px Trebuchet MS;
+      margin: 8px;
+      height: 32px;
+      padding: 4px 6px;
+      box-sizing: border-box;
+    }
+
+    #modal1 {
+      font: 15px Trebuchet MS;
+      background: #f6f6f6;
+      position: absolute;
+      top: var(--top);
+      left: var(--left);
+      width: var(--width);
+      height: var(--height);
+      border: 1px solid;
+      padding: 10px 20px;
+    }
+
+    #modal1 form {
+      display: flex;
+      flex-flow: column;
+    }
+
+    #modal1 h3 {
+      text-align: center;
+    }
+
+    #modal1 label {
+      display: flex;
+      align-items: center;
+    }
+
+    #modal1 label :last-child {
+      flex: 1;
+    }
+
+    #modal1 textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    #modal1 .buttons {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="modal1" 
+    data-top="80" data-left="140" data-width="400" data-height="380">
+    
+    <h3>Create new item</h3>
+    <form>
+      <label>
+        Input 1:
+        <input type="text">
+      </label>
+      <label>
+        Input 2:
+        <input type="text">
+      </label>
+      <label>
+        Select for a change:
+        <select>
+          <option>option 1</option>
+          <option>option 2</option>
+          <option selected>option 3</option>
+          <option>option 4</option>
+        </select>
+      </label>
+      <label>
+        Description:
+        <textarea>no description here... yet</textarea>
+      </label>
+      <div class="buttons">
+        <button>Save</button>
+        <button>Reset</button>
+        <button>Close</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
