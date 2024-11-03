@@ -1,4 +1,4 @@
-# Modal
+# [Modal](https://github.com/UniBreakfast/Modal)
 
 ## A class to create modal window elements with semi-transparen backdrop
 
